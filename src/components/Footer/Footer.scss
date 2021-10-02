@@ -1,0 +1,32 @@
+.footer {
+    background: url('../../images/eye1.svg') no-repeat 1100px 250px,
+                url('../../images/eye.svg') no-repeat 0 560px;
+    background-size: 290px 156px, 164px 164px;
+    padding-bottom: 152px;
+    &__title {
+        font-size: 25px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #F6C866;
+        margin-bottom: 46px;
+    }
+    &__btns {
+        margin-bottom: 105px;
+    }
+    &__ask {
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(#fff, 0.6);
+    }
+    &__block {
+        width: 400px;
+        padding: 80px 45px;
+        text-align: center;
+        font-family: 'Bad Scripts', Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        line-height: 35px;
+        color: rgba(#fff, 0.6);
+        background: url('../../images/rune1.svg') no-repeat 180px 0,
+                    url('../../images/rune2.svg') no-repeat 180px 250px;
+    }
+}

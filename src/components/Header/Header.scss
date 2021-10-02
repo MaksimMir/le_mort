@@ -1,0 +1,63 @@
+.header {
+    min-height: 760px;
+    max-width: 1920px;
+    background: url('../../images/blik.png') no-repeat center;
+    background-size: cover;
+    &-top {
+        width: 100%;
+        text-align: center;
+    }
+    &__text-smal, &__text-big {
+        font-weight: 300;
+        color: rgba(#fff, 0.6);
+    }
+    &__text-smal {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 20px 0;
+    }
+    &__text-big {
+        font-size: 25px;
+        line-height: 29px;
+        padding-top: 12px;
+    }
+    &__line {
+        border-bottom: 2px solid rgba(#fff, 0.6);
+        width: 100%;
+    }
+}
+
+.bunner {
+    &__img {
+    position: relative;
+    width: 390px;
+    height: 390px;
+    margin-top: 42px;
+    background: url('../../images/img3.png') no-repeat center;
+    background-size: 325px 325px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 232px;
+            height: 232px;
+            border-radius: 50%;
+            top: 80px;
+            left: 80px;
+            background: url('../../images/img4.png') no-repeat center;
+        }
+    }
+    &__text {
+        text-align: center;
+        width: 499px;
+        font-size: 25px;
+        line-height: 35px;
+        color: #F6C866;
+        &-upper {
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+    }
+    &__btns {
+        margin-top: 40px;
+    }
+}
