@@ -1,8 +1,16 @@
+@import '../../index.scss';
+
 .content {
     padding-top: 110px;
     padding-bottom: 131px;
+    @include middle {
+        padding-bottom: 70px;
+    }
     &-top {
         padding: 128px 32px 83px;
+        @include middle-small {
+            padding: 98px 16px 52px;
+        }
         border: 1px solid #fff;
         position: relative;
         margin-bottom: 69px;
@@ -15,6 +23,9 @@
             background: url('../../images/img1.png') no-repeat center;
             top: -70px;
             left: 150px;
+            @include small {
+                left: 32%;
+            }
         }
     }
     &__text {
@@ -24,6 +35,16 @@
         font-size: 25px;
         line-height: 35px;
         text-align: center;
+        @include middle {
+            font-size: 22px;
+            line-height: 35px;
+        }
+        @include middle-small {
+            font-size: 16px;
+            line-height: 25px;
+            width: 100%;
+            padding: 0;
+        }
         &-gold {
             color: #F6C866;
         }
@@ -32,9 +53,21 @@
         position: relative;
         width: 100%;
         min-height: 606px;
-        background: url('../../images/img2.jpg');
+        background: url('../../images/img2.jpg') no-repeat center;
         background-size: cover;
         padding: 240px 35% 107px;
+        @include large {
+            padding: 240px 30% 107px;
+        }
+        @include middle {
+            padding: 260px 25% 77px;
+        }
+        @include middle-small {
+            padding: 300px 12% 57px;
+        }
+        @include small {
+            padding: 300px 5% 57px;
+        }
         z-index: -1;
         &::before {
             position: absolute;
@@ -43,7 +76,7 @@
             min-height: 606px;
             top: 0;
             left: 0;
-            background:  rgba(#000000, 0.5);
+            background:  rgba(#000000, 0.6);
             z-index: -1;
         }
     }

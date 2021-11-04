@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className="col">
                     <h2 className="footer__title">Боитесь ли вы умереть?</h2>
                     <div className="footer__btns col">
-                        <Link className="btn btn-gold" to="/cards">Да</Link>
-                        <Link className="btn btn-gold">Нет</Link>
+                        <Link className="btn btn-gold" to="/cards/2">Да</Link>
+                        <button className="btn btn-gold">Нет</button>
                         <p className="footer__ask">Вопрос 1-5</p>
                     </div>
                     <div className="footer__block">

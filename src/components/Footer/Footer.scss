@@ -1,28 +1,58 @@
+@import '../../index.scss';
+
 .footer {
-    background: url('../../images/eye1.svg') no-repeat 1100px 250px,
-                url('../../images/eye.svg') no-repeat 0 560px;
+    background: url('../../images/eye1.svg') no-repeat 1500px 270px,
+                url('../../images/eye.svg') no-repeat 200px 560px;
     background-size: 290px 156px, 164px 164px;
     padding-bottom: 152px;
+    @include extra-large {
+        background-position: 1280px 270px, -40px 560px;
+        background-size: 290px 156px, 164px 164px;
+    }
+    @include large {
+        background-position: 880px 270px, -40px 560px;
+        background-size: 290px 156px, 164px 164px;
+    }
+    @include middle {
+        background-position: 610px 270px, -40px 560px;
+        background-size: 200px 126px, 144px 144px;
+    }
+    @include middle-small {
+        background-position: 420px 270px, -40px 560px;
+        background-size: 170px 76px, 104px 104px;
+    }
+    @include small {
+        background-position: 320px 270px, -40px 560px;
+        background-size: 170px 76px, 104px 104px;
+    }
     &__title {
         font-size: 25px;
         line-height: 29px;
         text-transform: uppercase;
         color: #F6C866;
         margin-bottom: 46px;
+        @include middle-small {
+            font-size: 20px;
+            line-height: 27px;
+        }
     }
     &__btns {
         margin-bottom: 105px;
     }
     &__ask {
+        margin-top: auto;
         font-size: 16px;
         line-height: 19px;
         color: rgba(#fff, 0.6);
     }
     &__block {
         width: 400px;
+        @include small {
+            width: 100%;
+        }
         padding: 80px 45px;
         text-align: center;
-        font-family: 'Bad Scripts', Arial, Helvetica, sans-serif;
+        font-family: 'Bad Script', Arial, Helvetica, sans-serif;
         font-size: 25px;
         line-height: 35px;
         color: rgba(#fff, 0.6);

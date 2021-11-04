@@ -1,7 +1,120 @@
+@import '../../index.scss';
+
 .card {
+    margin: 0 auto;
     max-width: 1440px;
-    height: 100vh;
-    background: url('../../images/eye1.svg') no-repeat 1200px 100px,
-                url('../../images/eye.svg') no-repeat -40px 500px;
-    background-size: 296px 158px, 168px 168px;
+    &__item {
+        background: url('../../images/eye1.svg') no-repeat 900px 100px,
+                    url('../../images/eye.svg') no-repeat 140px 750px;
+        background-size: 296px 158px, 168px 168px;
+        @include large {
+            background-position: 700px 100px, 120px 750px;
+        }
+        @include middle {
+            background-position: 600px 100px, 20px 750px;
+            background-size: 246px 118px, 118px 118px;
+        }
+        @include middle-small {
+            background-position: 480px 30px, 0px 600px;
+            background-size: 206px 78px, 78px 78px;
+        }
+        @include small {
+            background-position: 320px 30px, 0px 600px;
+        }
+        text-align: center;
+        padding-bottom: 40px;
+        &-top {
+            min-height: 224px;
+            padding: 5% 400px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 74px;
+            font-family: 'Bad Script';
+            font-size: 25px;
+            line-height: 35px;
+            @include large {
+                padding: 5% 300px;
+            }
+            @include middle {
+                padding: 5% 200px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @include middle-small {
+                padding: 5% 70px;
+                min-height: 100px;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+        &-info {
+            position: relative;
+            background-color: #fff;
+            color: #202024;
+            padding: 20px 10px;
+            border-radius: 4px;
+            @include middle-small {
+                font-size: 14px;
+                line-height: 19px;
+            }
+            &::after {
+                pointer-events: none;
+                content: "";
+                position: absolute;
+                bottom: -12px;
+                right: 20px;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 12px solid #fff;
+            }
+        }
+        &-content {
+            min-height: 700px;
+            @include middle-small {
+                min-height: 500px;
+            }
+        }
+        &-title {
+            font-size: 25px;
+            line-height: 35px;
+            text-transform: uppercase;
+            width: 550px;
+            color: #f6c866;
+            margin-bottom: 50px;
+            @include middle-small {
+                font-size: 16px;
+                line-height: 25px;
+                width: 100%;
+                padding: 0 30px;
+            }
+        }
+        &-btns {
+            margin-bottom: 100px;
+            @include middle-small {
+                margin-bottom: 0;
+            }
+        }
+        &-input {
+            padding: 18px 0;
+            border-radius: 50px;
+            margin-bottom: 34px;
+            width: 315px;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            border: none;
+            outline: none;
+            appearance: none;
+            @include middle-small {
+                width: 182px;
+            }
+        }
+    }
+}
+
+.err {
+    border: 2px solid red;
+    padding: 16px 0;
 }

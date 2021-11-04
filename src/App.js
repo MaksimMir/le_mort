@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Cards from "./components/Cards/Cards";
 
-
 function App() {
   return (
     <>
@@ -17,6 +16,9 @@ function App() {
         </Route>
         <Route path="/cards">
           <Cards />
+        </Route>
+        <Route path="/*">
+          <p className="errorPage">404</p>
         </Route>
       </Switch>
     </BrowserRouter>

@@ -1,7 +1,11 @@
-import { Link } from 'react-router-dom';
 import './Header.scss';
 
 const Header = () => {
+
+    const scrollPage = () => {
+        window.scrollBy({top: 400, behavior: 'smooth'})
+    }
+
     return (
         <header className="header">
             <div className="container">
@@ -20,8 +24,8 @@ const Header = () => {
                             </p>
                         </div>
                         <div className="bunner__btns col">
-                            <Link className="btn btn-gold" to="/cards">Да</Link>
-                            <Link className="btn btn-gold">Нет</Link>
+                            <button onClick={scrollPage} className="btn btn-gold">Да</button>
+                            <button className="btn btn-gold">Нет</button>
                         </div>
                         <p className="header__text-smal">Онлайн предсказание</p>
                     </div>
